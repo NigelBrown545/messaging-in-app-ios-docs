@@ -30,7 +30,34 @@
         a:hover {
             text-decoration: underline;
         }
+        .main-classes {
+            margin-top: 20px;
+        }
+        .main-classes ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .main-classes li {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+        }
     </style>
+    <script>
+        // Check if we can directly access the documentation index
+        window.addEventListener('load', function() {
+            fetch('./SMIClientCore.doccarchive/index.html')
+                .then(response => {
+                    if (response.ok) {
+                        window.location.href = './SMIClientCore.doccarchive/documentation/smiclientcore/';
+                    }
+                })
+                .catch(error => {
+                    console.log('DocC archive may not be directly accessible:', error);
+                });
+        });
+    </script>
 </head>
 <body>
     <h1>SMIClientCore Documentation</h1>
@@ -39,7 +66,16 @@
     <div class="resources">
         <h2>Documentation Resources</h2>
         <ul>
-            <li><a href="./SMIClientCore.doccarchive/index.html">Main Documentation</a> (if available)</li>
+            <li><a href="./SMIClientCore.doccarchive/documentation/smiclientcore/">Main Documentation</a></li>
+        </ul>
+    </div>
+    
+    <div class="main-classes">
+        <h2>Key Classes</h2>
+        <ul>
+            <li><a href="./SMIClientCore.doccarchive/documentation/smiclientcore/smicoreclient/">SMICoreClient</a> - The main client class for the Messaging SDK</li>
+            <li><a href="./SMIClientCore.doccarchive/documentation/smiclientcore/smicoreconfiguration/">SMICoreConfiguration</a> - Configuration for the Messaging SDK</li>
+            <li><a href="./SMIClientCore.doccarchive/documentation/smiclientcore/smicoredelegate/">SMICoreDelegate</a> - Delegate protocol for Messaging SDK callbacks</li>
         </ul>
     </div>
     
@@ -48,6 +84,11 @@
         <ul>
             <li><a href="https://github.com/NigelBrown545/messaging-in-app-ios-docs">GitHub Repository</a></li>
         </ul>
+    </div>
+    
+    <div class="resources">
+        <h2>Troubleshooting</h2>
+        <p>If the documentation links do not work, you may need to download and view the DocC archive locally using Xcode.</p>
     </div>
 </body>
 </html> 
