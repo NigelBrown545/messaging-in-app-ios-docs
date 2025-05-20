@@ -1,19 +1,19 @@
-# SMIClientCore Documentation
+![Salesforce logo](./images/Salesforce-logo.png)
 
-This repository contains the generated documentation for the SMIClientCore framework. 
+# Salesforce Messaging for In-App (iOS SDK)
 
-The documentation is hosted at: https://nigelbrown545.github.io/messaging-in-app-ios-docs/
+Start a new conversation with customers from your iOS mobile app. Custom branding and mobile push notifications provide a modern experience.
 
-## About
+## iOS SDK Links
 
-This documentation is automatically generated from the SMIClientCore framework using Swift DocC.
+- [Messaging for In-App Developer Guide](https://developer.salesforce.com/docs/service/messaging-in-app/overview)
+- [iOS Release Notes](https://github.com/Salesforce-Async-Messaging/messaging-in-app-ios/releases)
+- [iOS Example Apps](./examples)
+- [iOS Reference Documentation](https://salesforce-async-messaging.github.io/messaging-in-app-ios/)
 
-## Local Preview
+## Other Messaging for In-App Links
 
-To preview the documentation locally:
+- [Salesforce Org Setup Instructions](https://help.salesforce.com/s/articleView?id=sf.miaw_setup_stages.htm)
+- [Android Messaging for In-App GitHub Repo](https://github.com/Salesforce-Async-Messaging/messaging-in-app-android)
 
-```bash
-python3 -m http.server 8000
-```
-
-Then open http://localhost:8000 in your browser.
+![iOS Device](./images/messaging-ios-device.png)
